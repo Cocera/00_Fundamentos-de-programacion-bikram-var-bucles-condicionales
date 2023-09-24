@@ -23,23 +23,24 @@ let booleanoMix0 = (booleano1||booleano2)&&(booleano1||(!booleano1)&&(!booleano2
 // 08 OPERADORES postincremento
 let incrementarDesp = 2;
 resultadoDesp = incrementarDesp++;
-console.log("Ej 08: " + resultadoDesp)
+console.log(resultadoDesp);
 
 // 09 OPERADORES preincremento
 let incrementarAntes = 2;
 resultadoAntes = ++incrementarAntes;
-console.log("Ej 09: " + resultadoAntes)
+console.log(resultadoAntes);
 
-            // 10 BUCLES
-            for (let contarHasta10_2 = 0; contarHasta10_2 <= 10; contarHasta10_2++) {
-                console.log(contarHasta10_2);
-            }; 
+// 10 BUCLES
+let contarHasta10_2 = 0;
+for (contarHasta10_2 = 0; contarHasta10_2 <= 10; contarHasta10_2++) {
+    if (contarHasta10_2 === 10) {console.log(contarHasta10_2); break};
+};
 
 // 11 BUCLES 
 let postI = 0;
 let postJ = 0;  
 for (let i = 0; i <= 10; i++) {
-console.log(postI += postJ++);
+    console.log(postI += postJ++);
 };
 
 // 12 BUCLES
@@ -61,14 +62,14 @@ const MiNumeroFav = 9;
 // 16 BOOLEANOS
 let booleanoOr = (booleano1||booleano2);
 
-            // 17 BOOLEANOS
-            let booleanoMix = (booleano1&&(TAU/2 === PI))||(variableValorNumerico>=MiNumeroFav);
+// 17 BOOLEANOS
+let booleanoMix1 = (booleano1&&(TAU/2 === PI))||(variableValorNumerico>=MiNumeroFav);
 
 // 18 BOOLEANOS
 let seisNoEsNueve = (6 !== 9);
 
-            // 19 BOOLEANOS
-            /* let booleanoMix2 =  +variableValorNumerico || < -(MiNumeroFav * TAU)*/ ;
+// 19 BOOLEANOS
+let booleanoMix2 =  variableValorNumerico > 0 || variableValorNumerico < -(MiNumeroFav * TAU); 
 
 // 20 OPERADORES
 let valorSuma = MiNumeroFav + variableValorNumerico;
@@ -86,10 +87,18 @@ let valorDivision = MiNumeroFav/3;
 let contarHasta10 = 0;
 do {console.log(contarHasta10++)} while (contarHasta10 !== 10);
 
-            // 25 BUCLES
-            let preJ = 0; 
-            for (let preI = 0; preI <= 11; preI += ++preJ) {console.log(preI)};
+// 25 BUCLES
+let preJ = 0; 
+let preI = 0;
+for (let i = 0; i <= 10; i++) {
+    console.log(preI += ++preJ);
+};
 
-
-            // 26 BUCLES
+// 26 BUCLES
+let sumaImpares = 0;
+for (let i = 0; i <= 10; i++) {
+    if (i % 2 !== 0) {
+        console.log(sumaImpares += i);
+    };
+};
 
